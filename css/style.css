@@ -304,6 +304,7 @@ body {
   font-weight: 600;
   line-height: 140%;
   color: rgb(255, 255, 255);
+  text-transform: uppercase;
 }
 .location-text-p {
   font-size: 20px;
@@ -350,3 +351,52 @@ body {
   border-radius: 5px;
 }
 
+/* Основной блок */
+.model {
+  position: relative;
+  padding-top: 100px;
+}
+
+.section-title {
+  color: rgb(40, 39, 57);
+  font-size: 2.1875rem;
+  font-weight: 600;
+/*   word-spacing: 0.3rem;
+  letter-spacing: .0625rem; */
+  text-transform: uppercase;
+}
+.model-container-text {
+  color: rgb(40, 39, 57);
+  font-size: 20px;
+  font-weight: 400;
+}
+.model-container-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: rgb(40, 39, 57);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.model-container-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.625rem;
+}
+.container-modal {
+  width: 55%;
+}
+.model-container-wrapper {
+  display: flex;
+}
+.model-container-photo {
+  position: absolute;
+  object-fit: cover;
+  min-height: 28.25rem;
+  right: 16rem;
+  top: 6.8125rem;
+  height: 95%;
+  width: 28%;
+  border-radius: 115px;
+}
