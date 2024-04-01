@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Jost", sans-serif;
+}
+.container {
+  max-width: 69.375rem;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 69.375rem;
+  margin: auto;
+  height: 2.4375rem;
+  justify-content: space-between;
+}
+
+.header-navar-block {
+  display: flex;
+  flex-basis: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1.875rem;
+}
+.header-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+
+.header-nav-link {
+  font-size: .75rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(93, 108, 123);
+}
+.header-icon {
+  margin-right: .5313rem;
+}
+.navbar-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-phone {
+  display: flex;
+  justify-content: end;
+}
+
+.header-phone-link {
+  font-size: .75rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(40, 39, 57);
+}
+.header-seporator {
+  margin: 0;
+  border: 1px solid #EBEBF0;
+}
+
+.navbar-header-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(40, 39, 57);
+}
+
+/* Выпадающее меню */
+.menu-line {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  align-items: end;
+}
+.sBtn-text {
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.menu-line-item {
+  height: 1.5px;
+  background-color:rgb(255, 255, 255);
+  width: 1.1rem;
+  transition: transform 0.2s;
+  border-radius: 8px;
+}
+#menu-line-end {
+  width: .6125rem;
+}
+.select-menu {
+  max-width: 114px;
+}
+.select-menu .select-btn {
+  display: flex;
+  height: 2.5rem;
+  width: 7.125rem;
+  background: #6F73EE;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.select-menu .options {
+  position: absolute;
+  width: 114px;
+  overflow-y: auto;
+  max-height: 295px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
+  animation-duration: 0.35s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.35s;
+  -webkit-animation-fill-mode: both;
+}
+.select-menu .options .option {
+  display: flex;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  align-items: center;
+  background: #fff;
+
+}
+.select-menu .options .option:hover {
+  background: #f2f2f2;
+}
+.select-menu .options .option i {
+  font-size: 25px;
+  margin-right: 12px;
+}
+.select-menu .options .option .option-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.select-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+
+.select-menu.active .options {
+  display: block;
+  opacity: 0;
+  z-index: 10;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+}
+
+/* @keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0;
+  }
+} */
+
+.input {
+  width: 100%;
+  padding: 0.7rem 1.875rem;
+  border: 1.5px solid #6F73EE;
+  background-color: inherit;
+  border-radius: 8px;
+  background-image: url(../img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.modal-input {
+  width: 37.6875rem;
+}
+.input-navbar-header-wrapper {
+  display: flex;
+  gap: 1.875rem;
+}
+
+
+.input-navbar-header {
+  position: relative;
+
+}
+
+.input-navbar-header-label {
+  position: absolute;
+  cursor: text;
+  left: 1rem;
+  top: 0.6rem;
+  color: #828A99;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  transition: top 0.2s, left 0.2s, font-size 0.2s;
+}
+
+.input:focus ~ .input-navbar-header-label,
+.input:not(:placeholder-shown).input:not(:focus) ~ .input-navbar-header-label {
+  top: -0.5rem;
+  left: 1.25rem;
+  font-size: 10px;
+  background-color: inherit;
+  padding: 0 .625rem;
+}
+
+.navbar-header {
+  padding-top: 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 69.375rem;
+  margin: auto;
+  height: 2.4375rem;
+  justify-content: space-between;
+}
+.header-block-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5625rem;
+}
+.input-icon {
+  position: absolute;
+  cursor: text;
+  right: 0.5rem;
+  top: 0.8rem;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+/* Секция локации */
+.scooters {
+  width: 86.25rem;
+  margin-top: 2.5rem;
+  margin: 2.5rem auto auto auto;
+  height: 27.8125rem;
+  background-image: linear-gradient(45deg, rgb(111, 115, 238),rgba(111, 115, 238, 0)), url(../img/Search.png);
+  background-repeat: no-repeat;
+  background-position: 96% 82%;
+  border-radius: 18px;
+}
+.block-scooters {
+  width: 38.25rem;
+  padding: 56px 0;
+}
+.location-text {
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.location-text-data {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.block-location {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.location-title {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 140%;
+  color: rgb(255, 255, 255);
+}
+.location-text-p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.block-choice {
+  display: flex;
+}
+.block-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12.75rem;
+}
+
+.group-image{
+  background-image: url(../img/Rectangle_185.png);
+  width: 3.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  border-radius: 6px;
+}
+
+.block-group-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(111, 115, 238);
+  background: rgb(255, 255, 255);
+  padding: 1.2rem 2.875rem;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
