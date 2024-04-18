@@ -172,25 +172,6 @@ body {
   -webkit-animation-fill-mode: both;
 }
 
-/* @keyframes fadeInUp {
-  from {
-    transform: translate3d(0, 30px, 0);
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-@keyframes fadeInDown {
-  from {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-  to {
-    transform: translate3d(0, 20px, 0);
-    opacity: 0;
-  }
-} */
 
 .input {
   width: 100%;
@@ -365,12 +346,12 @@ body {
   letter-spacing: .0625rem; */
   text-transform: uppercase;
 }
-.model-container-text {
+.model-container-text, .safety-container-text {
   color: rgb(40, 39, 57);
   font-size: 20px;
   font-weight: 400;
 }
-.model-container-list-item {
+.model-container-list-item, .safety-container-list-item {
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -379,7 +360,7 @@ body {
   font-weight: 400;
 }
 
-.model-container-list {
+.model-container-list, .safety-container-list {
   list-style-type: none;
   padding: 0;
   margin-top: 1.625rem;
@@ -387,7 +368,7 @@ body {
 .container-modal {
   width: 55%;
 }
-.model-container-wrapper {
+.model-container-wrapper, .safety-container-wrapper {
   display: flex;
 }
 .model-container-photo {
@@ -399,4 +380,165 @@ body {
   height: 95%;
   width: 28%;
   border-radius: 115px;
+}
+
+/* Блок безопасности */
+
+.safety {
+  position: relative;
+  padding-top: 100px;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.safety-container-photo {
+  position: absolute;
+  object-fit: cover;
+  left: 16rem;
+  top: 6.8125rem;
+}
+.container-safety {
+  max-width: 35rem;
+}
+
+/* Блок тест-драйва */
+.test {
+  padding-top: 100px;
+}
+.test-title {
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.test-cards {
+  flex-basis: 25%;
+  border-radius: 30px;
+  border: 1.5px solid #EAEBED;
+}
+.cards-title {
+  margin: 0;
+}
+.test-card {
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  gap: 30px;
+}
+.no-webp .test-status {
+  background-image: url("../img/scooter.png");
+}
+
+.test-status {
+  position: relative;
+  width: 15.9375rem;
+  height: 14.4375rem;
+  background-image: url("../img/scooter.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.test-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  height: 100%;
+}
+
+.test-status-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: .625rem;
+  padding-right: .625rem;
+}
+.test-text {
+  padding: 4px 9px;
+  background-color: #EE685F;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.block-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 2.1875rem;
+  height: 2.1875rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block-description {
+  padding: 24px;
+}
+
+.cards-container-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(40, 39, 57);
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.cards-container-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.5625rem;
+  columns: 2 auto;
+}
+.test-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.text-price {
+  text-decoration: line-through;
+  margin: 0;
+  color: rgb(93, 108, 123);
+  font-size: 12px;
+  font-weight: 400;
+}
+.title-price {
+  margin: 0;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+.test-shopping-cart {
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+}
+
+.block-cart {
+  border: 1.3px solid #C4C4C4;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.test-form-button {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  background: #6F73EE;
+  padding: .625rem 2.3125rem;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
 }
