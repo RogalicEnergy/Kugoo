@@ -76,7 +76,7 @@
         </ul>
       </div>
       <div class="input-navbar-header modal-input-navbar-header">
-        <input id="modal-user-name" type="text" class="input modal-input" name="username" placeholder=" ">
+        <input id="modal-user-name" type="text" class="modal-input" name="username" placeholder=" ">
         <label class="input-navbar-header-label modal-input-label" for="modal-user-name">Искать самокат KUGO</label>
         <svg class="input-icon" width="20" height="20">
           <use href="img/sprite.svg#lupa"></use>
@@ -470,6 +470,41 @@
               </div>
               <button type="submit" class="button test-form-button">Записаться на тест-драйв</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="bg-grey">
+        <div class="section-cta">
+          <picture class="cta-image">
+            <source type="image/webp" srcset="img/woman.webp">
+            <source type="image/jpeg" srcset="img/woman.png">
+            <img src="img/woman.png" alt="call to action" width="100%">
+          </picture>
+          <div class="cta-form-wrapper container">
+            <form action="handler.php" method="POST" class="cta-form">
+              <h2 class="section-title cta-form-title">Нет нужной модели, которую хотите протестировать?</h2>
+              <p class="cta-form-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
+              <div class="input-group-wrapper">
+                <div class="input-group">
+                  <input id="user-phone" type="tel" class="phone-mask" name="userphone" placeholder=" ">
+                  <label class="input-group-label" for="user-phone">Номер телефона</label>
+                  <button type="submit" class="cta-form-button">Оставить заявку на тест-драйв</button>
+                </div>
+                <!-- /.input-group -->
+              </div>
+              <div class="cta-form-footer">
+  
+                <div class="notify">
+                  <input type="checkbox" class="custom-checkbox" name="notify" id="notify">
+                  <!-- <svg class="notify-icon" width="14" height="14">
+                    <use href="img/sprite.svg#shield"></use>
+                  </svg> -->
+                  <label for="notify" class="notify-text"><p>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <u>политикой конфиденциальности</u></p></label>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
