@@ -202,7 +202,6 @@ body {
   line-height: 160%;
 }
 
-
 .input:focus ~ .input-navbar-header-label,
 .input:not(:placeholder-shown).input:not(:focus) ~ .input-navbar-header-label {
   top: 0rem;
@@ -212,8 +211,6 @@ body {
   padding: 0 .625rem;
   border-radius: .3125rem;
 }
-
-
 
 .navbar-header {
   padding-top: 1.875rem;
