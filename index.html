@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Kugoo</title>
 </head>
-  <body>
+  <body class="front-page">
     <nav class="navbar">
       <ul class="header-nav">
         <div class="header-navar-block">
@@ -129,7 +129,7 @@
               <p class="block-group-text">Проверите лучшие самокаты в деле</p>
             </div>
           </div>
-          <button type="submit" class="button scooters-form-button">Записаться</button>
+          <button type="submit" class="button scooters-form-button" data-toggle="modal" data-target="#feedback-modal">Записаться</button>
         </div>
       </div>
     </section>
@@ -491,9 +491,9 @@
               <h2 class="section-title cta-form-title">Нет нужной модели, которую хотите протестировать?</h2>
               <p class="cta-form-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
               <div class="input-group-wrapper">
-                <div class="input-group">
-                  <input id="user-phone" type="tel" class="phone-mask" name="userphone" placeholder=" ">
-                  <label class="input-group-label" for="user-phone">Номер телефона</label>
+                <div class="input-group-modal">
+                  <input id="user-phone" type="tel" class="input phone-maska phone-mask" name="userphone" placeholder=" ">
+                  <label class="input-group-label" for="user-phone">+7 (___) __ - __ - __</label>
                   <button type="submit" class="cta-form-button">Оставить заявку на тест-драйв</button>
                 </div>
               </div>
@@ -515,7 +515,7 @@
             <p class="mail-text">Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты</p>
           <div class="input-group-wrapper-mail">
             <div class="input-group-mail">
-              <input id="user-mail" type="mail" class="mail-mask" name="usermail" placeholder=" ">
+              <input id="user-mail" type="mail" class="input mail-mask" name="usermail" placeholder=" ">
               <label class="input-group-label-mail" for="user-mail">Введите Ваш email</label>
               <button type="submit" class="mail-form-button">Подписаться</button>
             </div>
@@ -718,36 +718,38 @@
     </footer>
     <div class="modal" id="feedback-modal">
       <div class="modal-dialog">
-        <h2 class="modal-title">Есть вопросы?</h2>
+        <div class="modal-body-block">
+          <h2 class="modal-title">Запишитесь на тест-драйв электросамоката</h2>
+        <p class="modal-title-text">и подберите модель для себя</p>
+        <p class="modal-text-menedjer">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
         <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
           <svg class="close-icon" width="24" height="24">
             <use href="img/sprite.svg#close"></use>
           </svg>
         </a>
-        <p class="modal-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+        <p class="modal-text">Как с вами удобнее связаться?</p>
         <form action="handler.php" method="POST" class="modal-form">
           <div class="input-group-wrapper input-group-vertical">
             <div class="input-group modal-input-group">
-              <input id="modal-user-name" type="text" class="input modal-input" name="username" placeholder=" ">
-              <label class="input-group-label modal-input-label" for="modal-user-name">Имя</label>
-            </div>
-            <!-- /.input-group-vertical -->
-            <div class="input-group modal-input-group">
-              <input id="modal-user-phone" type="tel" class="input modal-input phone-mask" name="userphone" placeholder=" ">
-              <label class="input-group-label modal-input-label" for="modal-user-phone">Номер телефона</label>
-            </div>
-            <!-- /.input-group-vertical -->
-          </div>
-          <div class="modal-form-footer">
-            <button type="submit" class="button modal-form-button">Отправить заявку</button>
-            <div class="notify">
-              <svg class="notify-icon" width="14" height="14">
-                <use href="img/sprite.svg#shield"></use>
-              </svg>
-              <p class="notify-text">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!</p>
+              <input id="modal-user-phone" type="tel" class="input phone-modal phone-mask" name="userphone" placeholder=" ">
+              <label class="input-group-label modal-input-label" for="modal-user-phone">+7 (___) __ - __ - __</label>
+              <button type="submit" class="button cta-modal-form-button">Оформить предзаказ</button>
             </div>
           </div>
-          <!-- /.modal-group-vertical -->
+          <div class="cta-form-footer-modal">
+            <div class="notify-modal">
+              <input type="checkbox" class="custom-checkbox" name="notify" id="notify">
+              <label for="notify" class="notify-text"><p>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <u class="text-purple">политикой конфиденциальности</u></p></label>
+            </div>
+          </div> 
+        </div>
+          <div class="modal-block-logo">
+            <picture class="modal-logo">
+              <source type="image/webp" srcset="img/woman2.webp">
+              <source type="image/jpeg" srcset="img/woman2.png">
+              <img src="img/woman2.png" alt="Запишитесь">
+            </picture>
+          </div>
         </form>
       </div>
     </div>
