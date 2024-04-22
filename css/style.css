@@ -69,13 +69,6 @@ body {
   border: 1px solid #EBEBF0;
 }
 
-.navbar-header-title {
-  font-size: 1.875rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: rgb(40, 39, 57);
-}
-
 /* Выпадающее меню */
 .menu-line {
   display: flex;
@@ -589,12 +582,6 @@ body {
 
 .input-group-wrapper {
   display: flex;
-
-}
-
-.input-group-vertical {
-  display: flex;
-  flex-direction: column;
 }
 
 .input-group {
@@ -722,4 +709,335 @@ body {
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+
+/* блок mail */
+.mail {
+  display: flex;
+  padding-top: 0.5rem;
+}
+
+.bg-purple {
+  background-color: rgb(111, 115, 238);
+  height: 6.0625rem;
+}
+
+.mail-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 28rem;
+  text-transform: uppercase;
+}
+
+.mail-mask {
+  width: 25.625rem;
+  padding: .9375rem 1.5625rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.input-group-wrapper-mail {
+
+}
+
+.input-group-mail {
+  position: relative;
+  height: 4.125rem;
+  flex-grow: 1;
+  margin-left: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group-label-mail {
+  position: absolute;
+  cursor: text;
+  left: 2rem;
+  top: 1.3rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  transition: top 0.2s, left 0.2s, font-size 0.2s;
+}
+
+.input:focus {
+  border: 1px solid #5C8EE5;
+  outline: 0;
+}
+
+.input:focus ~ .input-group-label,
+.input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
+  top: -0.5rem;
+  left: 1.25rem;
+  font-size: 10px;
+  background-color: inherit;
+  padding: 0 .625rem;
+}
+
+.input.is-invalid {
+  border: 1px solid red;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: inherit;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+.mail-form-button{
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(111, 115, 238);
+  background: #fff;
+  padding: .9375rem 1.5625rem;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+/* Footer */
+
+.bg-gray {
+  background-color: rgb(244, 247, 251);
+}
+
+.footer-top {
+  padding-top: 2.5rem;
+  padding-bottom: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 12.5rem;
+  height: 3.75em;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-style: normal;
+  color: #292D33;
+  gap: .625rem;
+}
+
+.footer-info-address,
+.footer-info-email {
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-phone {
+  color: #292D33;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%; 
+  text-decoration: none;
+}
+
+.footer-social-link {
+  text-decoration: none;
+}
+
+.footer-seporator {
+  border: 1px solid rgba(93, 108, 123, 0.2);
+}
+
+.footer-menu-title {
+  margin-top: 0;
+  margin-bottom: 1.875rem;
+  color: #292D33;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.footer-bottom {
+  display: flex;
+  padding-top: 2.125rem;
+  padding-bottom: 4.6875rem;
+  justify-content: space-between;
+}
+
+.footer-menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu-column-2 {
+  columns: 2 auto;
+  gap: 2.5rem;
+}
+
+.footer-menu-link {
+  text-decoration: none;
+  color: #828A99;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: .625rem;
+  display: block;
+}
+
+
+.footer-menu-link-bold {
+  color: #292D33;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 160%;
+  margin-bottom: 1.875rem;
+}
+
+.footer-menu-wrapper:last-child {
+  margin-left: 10.8rem;
+}
+
+.footer-wrapper {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #828A99;
+  font-style: normal;
+}
+
+
+.footer-wrapper,
+.footer-legal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.375rem;
+  margin-top: 0.5rem;
+}
+
+.footer-copyright {
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: rgb(93, 108, 123);
+  margin-top: .4375rem;
+}
+
+.footer-menu-text {
+  font-size: .75rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.footer-menu-link-bell {
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: rgb(111, 115, 238);
+  text-decoration: none;
+}
+
+.social-store {
+  margin-left: -16%;
+}
+
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.25rem;
+  padding-bottom: 2.0625rem;
+}
+.social-block {
+  display: flex;
+}
+
+.social-form-button {
+  background: #fff;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 11px 21px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.social-form-button-store {
+  background: #fff;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.social-icon-store {
+  display: grid;
+  align-items: start;
+}
+.social-icon-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  padding: 0;
+  margin: 0;
+}
+.social-icon-cent {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgb(93, 108, 123);
+  margin: 0;
+  display: grid;
+  justify-content: start;
+}
+
+.footer-political {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.1875rem;
+}
+.footer-text-list{
+  display: flex;
+  align-items: center;
+  gap: 2.75rem;
+}
+.footer-bank {
+  display: flex;
+  margin-right: -33%;
+}
+.footer-text-item {
+  font-size: .75rem;
+  font-weight: 400;
+  color: rgb(93, 108, 123);
+  list-style-type: none;
+  cursor: pointer;
+}
+.social-online {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.online-text {
+  font-size: .875rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.social-icon {
+  margin-left: .9375rem;
 }
