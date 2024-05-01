@@ -6,12 +6,56 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Kugoo</title>
 </head>
   <body class="front-page">
+    <div class="mobile-menu">
+      <ul class="mobile-menu-nav">
+        <li class="mobile-menu-nav-item">
+          <a href="#" class="mobile-menu-link">Сервис</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#" class="mobile-menu-link">Сотрудничество</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#" class="mobile-menu-link">Корзина</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#" class="mobile-menu-link">Избранное</a>
+        </li>
+      </ul>
+      <hr class="mobile-seporator">
+      <div class="mobile-phone-info">
+        <p class="mobali-info-text">Заказать звонок</p>
+        <a href="tel:+7(499)686-10-14" class="mobile-phone">+7 (499) 686-10-14</a>
+      </div>
+      <div class="mobile-info">
+        <a href="#" class="mobile-info-viber">
+          <svg class="vk-icon" width="12" height="12">
+            <use href="img/sprite.svg#viber"></use>
+          </svg>
+        </a>
+        <a href="#" class="mobile-info-whatsapp">
+          <svg class="inst-icon" width="12" height="12">
+            <use href="img/sprite.svg#whatsapp"></use>
+          </svg>
+        </a>
+        <a href="#" class="mobile-info-telegram">
+          <svg class="inst-icon" width="12" height="12">
+            <use href="img/sprite.svg#telegram"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
     <nav class="navbar">
+        <a href="" class="mobile-menu-toggle-navbar">
+          <div class="mobile-menu-line-navbar"></div>
+          <div class="mobile-menu-line-navbar"></div>
+          <div class="mobile-menu-line-navbar"></div>
+        </a>
       <ul class="header-nav">
         <div class="header-navar-block">
           <li class="header-nav-item">
@@ -33,11 +77,9 @@
             <svg class="header-icon" width="12" height="12">
               <use href="img/sprite.svg#telegram"></use>
             </svg>
-
           </div>
         </div>
       </ul>
-      <!-- /.header-phone -->
       <div class="header-phone">
         <a href="tel:+78005055461" class="header-phone-link">+7 (800) 505-54-61</a>
       </div>
@@ -49,54 +91,54 @@
         <source type="image/png" srcset="img/logo.png">
         <img src="img/logo.png" alt="logo" width="100%" height="100%">
       </picture>
-      <div class="select-menu active">
-        <div class="select-btn">
-          <i class="bx bx-chevron-down">
-            <div class="menu-line">
-              <div class="menu-line-item"></div>
-              <div class="menu-line-item"></div>
-              <div class="menu-line-item" id="menu-line-end"></div>
-            </div>
-          </i>
-          <span class="sBtn-text">Каталог</span>
+      <div class="block-header">
+        <div class="select-menu active">
+          <ul class="menu-toggle select-btn">
+            <li href="" class="mobile-menu-toggle">
+              <div class="mobile-menu-line"></div>
+              <div class="mobile-menu-line"></div>
+              <div class="mobile-menu-line" id="menu-line-end"></div>
+            </li>
+            <p class="button-toggle-text">Каталог</p>
+          </ul>
+          <ul class="options">
+            <li class="option">
+              <i class="bx bxl-instagram-alt"></i>
+              <span class="option-text">Сервис</span>
+            </li>
+            <li class="option">
+              <i class="bx bxl-linkedin-square"></i>
+              <span class="option-text">Сотрудничество</span>
+            </li>
+            <li class="option">
+              <i class="bx bxl-linkedin-square"></i>
+              <span class="option-text">Корзина</span>
+            </li>
+            <li class="option">
+              <i class="bx bxl-linkedin-square"></i>
+              <span class="option-text">Избранное</span>
+            </li>
+          </ul>
         </div>
-        <ul class="options">
-          <li class="option">
-            <i class="bx bxl-instagram-alt"></i>
-            <span class="option-text">Instagram</span>
-          </li>
-          <li class="option">
-            <i class="bx bxl-linkedin-square"></i>
-            <span class="option-text">Linkedin</span>
-          </li>
-          <li class="option">
-            <i class="bx bxl-facebook-circle"></i>
-            <span class="option-text">Facebook</span>
-          </li>
-          <li class="option">
-            <i class="bx bxl-twitter"></i>
-            <span class="option-text">Twitter</span>
-          </li>
-        </ul>
-      </div>
-      <div class="input-navbar-header modal-input-navbar-header">
-        <input id="modal-user-name" type="text" class="modal-input" name="username" placeholder=" ">
-        <label class="input-navbar-header-label" for="modal-user-name">Искать самокат KUGO</label>
-        <svg class="input-icon" width="20" height="20">
-          <use href="img/sprite.svg#lupa"></use>
-        </svg>
-      </div>
-      <div class="header-block-icon">
-        <svg class="phone-icon" width="20" height="11">
-          <use href="img/sprite.svg#balance"></use>
-        </svg>
-        <svg class="phone-icon" width="20" height="20">
-          <use href="img/sprite.svg#heart"></use>
-        </svg>
-        <svg class="phone-icon" width="20" height="20">
-          <use href="img/sprite.svg#shopping"></use>
-        </svg>
-        <p>Корзина</p>
+        <div class="input-navbar-header modal-input-navbar-header">
+          <input id="modal-user-name" type="text" class="modal-input" name="username" placeholder=" ">
+          <label class="input-navbar-header-label" for="modal-user-name">Искать самокат KUGO</label>
+          <svg class="input-icon" width="20" height="20">
+            <use href="img/sprite.svg#lupa"></use>
+          </svg>
+        </div>
+        <div class="header-block-icon">
+          <svg class="phone-icon balance" width="20" height="11">
+            <use href="img/sprite.svg#balance"></use>
+          </svg>
+          <svg class="phone-icon" width="20" height="20">
+            <use href="img/sprite.svg#heart"></use>
+          </svg>
+          <svg class="phone-icon" width="20" height="20">
+            <use href="img/sprite.svg#shopping"></use>
+          </svg>
+          <p class="header-text">Корзина</p>
+        </div>
       </div>
     </div>
     <section class="section scooters">
@@ -134,11 +176,13 @@
       </div>
     </section>
     <section class="section model">
-      <picture  class="model-container-photo">
-        <source type="image/webp" srcset="img/E-Scooters.webp">
-        <source type="image/png" srcset="img/E-Scooters.png">
-        <img src="img/E-Scooters.png" alt="E-Scooters_Thumb" width="100%" height="100%">
-      </picture>
+      <div class="block-photo">
+        <picture  class="model-container-photo">
+          <source type="image/webp" srcset="img/E-Scooters.webp">
+          <source type="image/png" srcset="img/E-Scooters.png">
+          <img src="img/E-Scooters.png" alt="E-Scooters_Thumb" width="100%" height="100%">
+        </picture>
+      </div>
       <div class="container">
         <div class="container-modal">
           <h2 class="section-title">Определите максимально подходящую вам модель
@@ -179,11 +223,13 @@
       </div>
     </section>
     <section class="section safety">
-      <picture  class="safety-container-photo">
-        <source type="image/webp" srcset="img/safety.webp">
-        <source type="image/png" srcset="img/safety.png">
-        <img src="img/safety.png" alt="safety" width="100%" height="100%">
-      </picture>
+      <div class="block-photo">
+        <picture  class="safety-container-photo">
+          <source type="image/webp" srcset="img/safety.webp">
+          <source type="image/png" srcset="img/safety.png">
+          <img src="img/safety.png" alt="safety" width="100%" height="100%">
+        </picture>
+      </div>
       <div class="container">
         <div class="content-wrapper">
           <div class="container-safety">
@@ -234,247 +280,252 @@
         <div class="test-title">
           <h2 class="section-title">Сейчас для тест-драйва и обучения доступны следующие модели</h2>
         </div>
-        <div class="test-card">
-          <div class="test-cards">
-            <div class="test-status">
-              <div class="test-status-block">
-                <p class="test-text">Хит</p>
-                <div class="block-icon">
-                  <svg width="20" height="12" class="test-status-icon">
-                    <use href="img/sprite.svg#balance"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="block-description">
-              <h3 class="cards-title">Kugoo Kirin M4</h3>
-              <ul class="cards-container-list">
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#accumulator"></use>
-                  </svg>
-                  2000 mAh
-                </li>
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#speedometer"></use>
-                  </svg>
-                  60 км/ч
-                </li>
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#power"></use>
-                  </svg>
-                  1,2 л.с.
-                </li>
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#timer"></use>
-                  </svg>
-                  5 часов
-                </li>
-              </ul>
-              <div class="test-block">
-                <div class="test-price">
-                  <p class="text-price">39 900 ₽</p>
-                  <h3 class="title-price">29 900 ₽</h3>
-                </div>
-                <div class="test-shopping-cart">
-                  <div class="block-cart">
-                    <svg width="20" height="20" class="price-icon">
-                      <use href="img/sprite.svg#shopping-cart"></use>
-                    </svg>
-                  </div>
-                  <div class="block-cart">
-                    <svg width="20" height="20" class="price-icon">
-                      <use href="img/sprite.svg#heart"></use>
+        <!-- Slider main container -->
+        <div class="swiper steps-slider">
+          <!-- Additional required wrapper -->
+          <ol class="swiper-wrapper test-card">
+            <!-- Slides -->
+            <li class="swiper-slide test-cards">
+              <div class="test-status">
+                <div class="test-status-block">
+                  <p class="test-text">ХИТ</p>
+                  <div class="block-icon">
+                    <svg width="20" height="12" class="test-status-icon">
+                      <use href="img/sprite.svg#balance"></use>
                     </svg>
                   </div>
                 </div>
               </div>
-              <button type="submit" class="button test-form-button">Записаться на тест-драйв</button>
-            </div>
-          </div>
-          <div class="test-cards">
-            <div class="test-status">
-              <div class="test-status-block">
-                <p class="test-text">Хит</p>
-                <div class="block-icon">
-                  <svg width="20" height="12" class="test-status-icon">
-                    <use href="img/sprite.svg#balance"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="block-description">
-              <h3 class="cards-title">Kugoo Kirin M4</h3>
-              <ul class="cards-container-list">
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#accumulator"></use>
-                  </svg>
-                  2000 mAh
-                </li>
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#speedometer"></use>
-                  </svg>
-                  60 км/ч
-                </li>
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#power"></use>
-                  </svg>
-                  1,2 л.с.
-                </li>
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#timer"></use>
-                  </svg>
-                  5 часов
-                </li>
-              </ul>
-              <div class="test-block">
-                <div class="test-price">
-                  <p class="text-price">39 900 ₽</p>
-                  <h3 class="title-price">29 900 ₽</h3>
-                </div>
-                <div class="test-shopping-cart">
-                  <div class="block-cart">
-                    <svg width="20" height="20" class="price-icon">
-                      <use href="img/sprite.svg#shopping-cart"></use>
+              <div class="block-description">
+                <h3 class="cards-title">Kugoo Kirin M4</h3>
+                <ul class="cards-container-list">
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#accumulator"></use>
                     </svg>
+                    <p class="cards-item-text">2000 mAh</p>
+                  </li>
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#speedometer"></use>
+                    </svg>
+                    <p class="cards-item-text">60 км/ч</p>
+                  </li>
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#power"></use>
+                    </svg>
+                    <p class="cards-item-text">1,2 л.с.</p>
+                  </li>
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#timer"></use>
+                    </svg>
+                    <p class="cards-item-text">5 часов</p>
+                  </li>
+                </ul>
+                <div class="test-block">
+                  <div class="test-price">
+                    <p class="text-price">39 900 ₽</p>
+                    <h3 class="title-price">29 900 ₽</h3>
                   </div>
-                  <div class="block-cart">
-                    <svg width="20" height="20" class="price-icon">
-                      <use href="img/sprite.svg#heart"></use>
-                    </svg>
+                  <div class="test-shopping-cart">
+                    <div class="block-cart">
+                      <svg width="20" height="20" class="price-icon">
+                        <use href="img/sprite.svg#shopping-cart"></use>
+                      </svg>
+                    </div>
+                    <div class="block-cart">
+                      <svg width="20" height="20" class="price-icon">
+                        <use href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
+                <button type="submit" class="button test-form-button">Записаться на тест-драйв</button>
               </div>
-              <button type="submit" class="button test-form-button">Записаться на тест-драйв</button>
-            </div>
-          </div>
-          <div class="test-cards">
-            <div class="test-status">
-              <div class="test-status-block">
-                <p class="test-text">Хит</p>
-                <div class="block-icon">
-                  <svg width="20" height="12" class="test-status-icon">
-                    <use href="img/sprite.svg#balance"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="block-description">
-              <h3 class="cards-title">Kugoo Kirin M4</h3>
-              <ul class="cards-container-list">
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#accumulator"></use>
-                  </svg>
-                  2000 mAh
-                </li>
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#speedometer"></use>
-                  </svg>
-                  60 км/ч
-                </li>
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#power"></use>
-                  </svg>
-                  1,2 л.с.
-                </li>
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#timer"></use>
-                  </svg>
-                  5 часов
-                </li>
-              </ul>
-              <div class="test-block">
-                <div class="test-price">
-                  <p class="text-price">39 900 ₽</p>
-                  <h3 class="title-price">29 900 ₽</h3>
-                </div>
-                <div class="test-shopping-cart">
-                  <div class="block-cart">
-                    <svg width="20" height="20" class="price-icon">
-                      <use href="img/sprite.svg#shopping-cart"></use>
-                    </svg>
-                  </div>
-                  <div class="block-cart">
-                    <svg width="20" height="20" class="price-icon">
-                      <use href="img/sprite.svg#heart"></use>
+            </li>
+            <li class="swiper-slide test-cards">
+              <div class="test-status">
+                <div class="test-status-block">
+                  <p class="test-text" id="new">Новинка</p>
+                  <div class="block-icon">
+                    <svg width="20" height="12" class="test-status-icon">
+                      <use href="img/sprite.svg#balance"></use>
                     </svg>
                   </div>
                 </div>
               </div>
-              <button type="submit" class="button test-form-button">Записаться на тест-драйв</button>
-            </div>
-          </div>
-          <div class="test-cards">
-            <div class="test-status">
-              <div class="test-status-block">
-                <p class="test-text">Хит</p>
-                <div class="block-icon">
-                  <svg width="20" height="12" class="test-status-icon">
-                    <use href="img/sprite.svg#balance"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="block-description">
-              <h3 class="cards-title">Kugoo Kirin M4</h3>
-              <ul class="cards-container-list">
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#accumulator"></use>
-                  </svg>
-                  2000 mAh
-                </li>
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#speedometer"></use>
-                  </svg>
-                  60 км/ч
-                </li>
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#power"></use>
-                  </svg>
-                  1,2 л.с.
-                </li>
-                <li class="cards-container-item">
-                  <svg width="18" height="18" class="cards-container-list-icon">
-                    <use href="img/sprite.svg#timer"></use>
-                  </svg>
-                  5 часов
-                </li>
-              </ul>
-              <div class="test-block">
-                <div class="test-price">
-                  <p class="text-price">39 900 ₽</p>
-                  <h3 class="title-price">29 900 ₽</h3>
-                </div>
-                <div class="test-shopping-cart">
-                  <div class="block-cart">
-                    <svg width="20" height="20" class="price-icon">
-                      <use href="img/sprite.svg#shopping-cart"></use>
+              <div class="block-description">
+                <h3 class="cards-title">Kugoo Kirin M4</h3>
+                <ul class="cards-container-list">
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#accumulator"></use>
                     </svg>
+                    <p class="cards-item-text">2000 mAh</p>
+                  </li>
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#speedometer"></use>
+                    </svg>
+                    <p class="cards-item-text">60 км/ч</p>
+                  </li>
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#power"></use>
+                    </svg>
+                    <p class="cards-item-text">1,2 л.с.</p>
+                  </li>
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#timer"></use>
+                    </svg>
+                    <p class="cards-item-text">5 часов</p>
+                  </li>
+                </ul>
+                <div class="test-block">
+                  <div class="test-price">
+                    <p class="text-price">39 900 ₽</p>
+                    <h3 class="title-price">29 900 ₽</h3>
                   </div>
-                  <div class="block-cart">
-                    <svg width="20" height="20" class="price-icon">
-                      <use href="img/sprite.svg#heart"></use>
-                    </svg>
+                  <div class="test-shopping-cart">
+                    <div class="block-cart">
+                      <svg width="20" height="20" class="price-icon">
+                        <use href="img/sprite.svg#shopping-cart"></use>
+                      </svg>
+                    </div>
+                    <div class="block-cart">
+                      <svg width="20" height="20" class="price-icon">
+                        <use href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
+                <button type="submit" class="button test-form-button">Записаться на тест-драйв</button>
               </div>
-              <button type="submit" class="button test-form-button">Записаться на тест-драйв</button>
-            </div>
-          </div>
+            </li>
+            <li class="swiper-slide test-cards">
+              <div class="test-status">
+                <div class="test-status-block">
+                  <p class="test-text">ХИТ</p>
+                  <div class="block-icon">
+                    <svg width="20" height="12" class="test-status-icon">
+                      <use href="img/sprite.svg#balance"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="block-description">
+                <h3 class="cards-title">Kugoo Kirin M4</h3>
+                <ul class="cards-container-list">
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#accumulator"></use>
+                    </svg>
+                    <p class="cards-item-text">2000 mAh</p>
+                  </li>
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#speedometer"></use>
+                    </svg>
+                    <p class="cards-item-text">60 км/ч</p>
+                  </li>
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#power"></use>
+                    </svg>
+                    <p class="cards-item-text">1,2 л.с.</p>
+                  </li>
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#timer"></use>
+                    </svg>
+                    <p class="cards-item-text">5 часов</p>
+                  </li>
+                </ul>
+                <div class="test-block">
+                  <div class="test-price">
+                    <p class="text-price">39 900 ₽</p>
+                    <h3 class="title-price">29 900 ₽</h3>
+                  </div>
+                  <div class="test-shopping-cart">
+                    <div class="block-cart">
+                      <svg width="20" height="20" class="price-icon">
+                        <use href="img/sprite.svg#shopping-cart"></use>
+                      </svg>
+                    </div>
+                    <div class="block-cart">
+                      <svg width="20" height="20" class="price-icon">
+                        <use href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="button test-form-button">Записаться на тест-драйв</button>
+              </div>
+            </li>
+            <li class="swiper-slide test-cards">
+              <div class="test-status">
+                <div class="test-status-block">
+                  <p class="test-text" id="new">Новинка</p>
+                  <div class="block-icon">
+                    <svg width="20" height="12" class="test-status-icon">
+                      <use href="img/sprite.svg#balance"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="block-description">
+                <h3 class="cards-title">Kugoo Kirin M4</h3>
+                <ul class="cards-container-list">
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#accumulator"></use>
+                    </svg>
+                    <p class="cards-item-text">2000 mAh</p>
+                  </li>
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#speedometer"></use>
+                    </svg>
+                    <p class="cards-item-text">60 км/ч</p>
+                  </li>
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#power"></use>
+                    </svg>
+                    <p class="cards-item-text">1,2 л.с.</p>
+                  </li>
+                  <li class="cards-container-item">
+                    <svg width="18" height="18" class="cards-container-list-icon">
+                      <use href="img/sprite.svg#timer"></use>
+                    </svg>
+                    <p class="cards-item-text">5 часов</p> 
+                  </li>
+                </ul>
+                <div class="test-block">
+                  <div class="test-price">
+                    <p class="text-price">39 900 ₽</p>
+                    <h3 class="title-price">29 900 ₽</h3>
+                  </div>
+                  <div class="test-shopping-cart">
+                    <div class="block-cart">
+                      <svg width="20" height="20" class="price-icon">
+                        <use href="img/sprite.svg#shopping-cart"></use>
+                      </svg>
+                    </div>
+                    <div class="block-cart">
+                      <svg width="20" height="20" class="price-icon">
+                        <use href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="button test-form-button">Записаться на тест-драйв</button>
+              </div>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
@@ -486,24 +537,26 @@
             <source type="image/jpeg" srcset="img/woman.png">
             <img src="img/woman.png" alt="call to action" width="100%">
           </picture>
-          <div class="cta-form-wrapper container">
-            <form action="handler.php" method="POST" class="cta-form">
-              <h2 class="section-title cta-form-title">Нет нужной модели, которую хотите протестировать?</h2>
-              <p class="cta-form-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
-              <div class="input-group-wrapper">
-                <div class="input-group-modal">
-                  <input id="user-phone" type="tel" class="input phone-maska phone-mask" name="userphone" placeholder=" ">
-                  <label class="input-group-label" for="user-phone">+7 (___) __ - __ - __</label>
-                  <button type="submit" class="cta-form-button">Оставить заявку на тест-драйв</button>
+          <div class="container">
+            <div class="cta-form-wrapper">
+              <form action="handler.php" method="POST" class="cta-form">
+                <h2 class="section-title cta-form-title">Нет нужной модели, которую хотите протестировать?</h2>
+                <p class="cta-form-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
+                <div class="input-group-wrapper">
+                  <div class="input-group-modal">
+                    <input id="user-phone" type="tel" class="input phone-maska phone-mask" name="userphone" placeholder=" ">
+                    <label class="input-group-label" for="user-phone">+7 (___) __ - __ - __</label>
+                    <button type="submit" class="cta-form-button">Оставить заявку на тест-драйв</button>
+                  </div>
                 </div>
-              </div>
-              <div class="cta-form-footer">
-                <div class="notify">
-                  <input type="checkbox" class="custom-checkbox" name="notify" id="notify">
-                  <label for="notify" class="notify-text"><p>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <u>политикой конфиденциальности</u></p></label>
+                <div class="cta-form-footer">
+                  <div class="notify">
+                    <input type="checkbox" class="custom-checkbox" name="notify" id="notify">
+                    <label for="notify" class="notify-text"><p>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <u>политикой конфиденциальности</u></p></label>
+                  </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -753,6 +806,8 @@
         </form>
       </div>
     </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/just-validate.production.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

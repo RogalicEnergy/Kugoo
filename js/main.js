@@ -1,3 +1,27 @@
+const navbar = document.querySelector(".navbar");
+const mMenuToggle = document.querySelector(".mobile-menu-toggle-navbar");
+const menu = document.querySelector(".mobile-menu");
+const isFront = document.body.classList.contains("front-page");
+
+mMenuToggle.addEventListener("click", (event) => {
+  event.preventDefault();
+  menu.classList.contains('is-open') ? closeMenu() : openMenu();
+});
+
+const openMenu = (event) => {  // функция открывания меню
+  menu.classList.add("is-open");  // вешает класс is open
+  mMenuToggle.classList.add("close-menu");
+  document.body.style.overflow="hidden"; // запрещаем прокрутку сайта под меню
+  lightModeOn();
+}
+const closeMenu = (event) => {  // функция закрытия меню
+  menu.classList.remove("is-open");  // убирает класс is open
+  mMenuToggle.classList.remove("close-menu");
+  document.body.style.overflow=""; // возвращает прокрутку сайта под меню
+  lightModeOff();
+}
+
+
 
 const optionMenu = document.querySelector(".select-menu"),
   selectBtn = optionMenu.querySelector(".select-btn"),
@@ -18,22 +42,21 @@ options.forEach((option) => {
 });
 
 
-const mMenuToggle = document.querySelector(".mobile-menu-toggle");
-const menu = document.querySelector(".mobile-menu");
-const isFront = document.body.classList.contains("front-page");
-
-const lightModeOn = (event) => {
-  navbar.classList.add("navbar-light");
-}
-const lightModeOff = (event) => {
-  navbar.classList.remove("navbar-light");
-}
-
-
-const changeNavHeight = (height) => {
-  navbar.style.height = height;
-};
-
+const swiperSteps = new Swiper('.steps-slider', {
+  speed: 400,
+  slidesPerView: 1,
+  breakpoints: {
+    560: {
+      slidesPerView: 1,
+    },
+    1000: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  }
+});
 
 let currentModal; // текущее модальное окно
 let modalDialog; // белое диалоговое окно
