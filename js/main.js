@@ -94,6 +94,9 @@ document.addEventListener("keyup", (event) => {
 });
 
 
+
+
+
 const forms = document.querySelectorAll("form"); /* собираем все формы */
 forms.forEach((form) => {
   const validation = new JustValidate(form, {
@@ -116,7 +119,8 @@ forms.forEach((form) => {
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            currentModal.classList.remove("is-open");
+            alert("Форма отправлена!");
+/*             currentModal.classList.remove("is-open");
             alertModal.classList.add("is-open");
             currentModal = alertModal;
             modalDialog = currentModal.querySelector(".modal-dialog");
@@ -127,9 +131,9 @@ forms.forEach((form) => {
             //закрываем окно
             currentModal.classList.remove("is-open");
             }
-          });
+          }); */
           } else {
-            alert(response.statusText);
+            alert("Ошибка. Текст ошибки: ".response.statusText);
           }
         });
       };
@@ -208,3 +212,6 @@ document.addEventListener("input", (e) => {
     input.value = result;
   }
 });
+
+
+

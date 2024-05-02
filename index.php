@@ -176,13 +176,11 @@
       </div>
     </section>
     <section class="section model">
-      <div class="block-photo">
         <picture  class="model-container-photo">
           <source type="image/webp" srcset="img/E-Scooters.webp">
           <source type="image/png" srcset="img/E-Scooters.png">
           <img src="img/E-Scooters.png" alt="E-Scooters_Thumb" width="100%" height="100%">
         </picture>
-      </div>
       <div class="container">
         <div class="container-modal">
           <h2 class="section-title">Определите максимально подходящую вам модель
@@ -223,13 +221,11 @@
       </div>
     </section>
     <section class="section safety">
-      <div class="block-photo">
-        <picture  class="safety-container-photo">
-          <source type="image/webp" srcset="img/safety.webp">
-          <source type="image/png" srcset="img/safety.png">
-          <img src="img/safety.png" alt="safety" width="100%" height="100%">
-        </picture>
-      </div>
+      <picture  class="safety-container-photo">
+        <source type="image/webp" srcset="img/safety.webp">
+        <source type="image/png" srcset="img/safety.png">
+        <img src="img/safety.png" alt="safety" width="100%" height="100%">
+      </picture>
       <div class="container">
         <div class="content-wrapper">
           <div class="container-safety">
@@ -544,10 +540,10 @@
                 <p class="cta-form-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
                 <div class="input-group-wrapper">
                   <div class="input-group-modal">
-                    <input id="user-phone" type="tel" class="input phone-maska phone-mask" name="userphone" placeholder=" ">
+                    <input id="user-phone" type="tel" class="input phone-mask" name="userphone" placeholder=" ">
                     <label class="input-group-label" for="user-phone">+7 (___) __ - __ - __</label>
-                    <button type="submit" class="cta-form-button">Оставить заявку на тест-драйв</button>
                   </div>
+                  <button type="submit" class="cta-form-button">Оставить заявку на тест-драйв</button>
                 </div>
                 <div class="cta-form-footer">
                   <div class="notify">
@@ -570,8 +566,8 @@
             <div class="input-group-mail">
               <input id="user-mail" type="mail" class="input mail-mask" name="usermail" placeholder=" ">
               <label class="input-group-label-mail" for="user-mail">Введите Ваш email</label>
-              <button type="submit" class="mail-form-button">Подписаться</button>
             </div>
+            <button type="submit" class="mail-form-button">Подписаться</button>
           </div>
           </div>
         </div>
@@ -786,8 +782,8 @@
             <div class="input-group modal-input-group">
               <input id="modal-user-phone" type="tel" class="input phone-modal phone-mask" name="userphone" placeholder=" ">
               <label class="input-group-label modal-input-label" for="modal-user-phone">+7 (___) __ - __ - __</label>
-              <button type="submit" class="button cta-modal-form-button">Оформить предзаказ</button>
             </div>
+            <button type="submit" class="button cta-modal-form-button">Оформить предзаказ</button>
           </div>
           <div class="cta-form-footer-modal">
             <div class="notify-modal">
