@@ -76,13 +76,13 @@
       <ul class="header-nav">
         <li class="header-navar-block">
           <ul class="header-nav-item">
-            <a href="/about.php" class="header-nav-link">Сервис</a>
+            <a href="#" class="header-nav-link">Сервис</a>
           </ul>
           <ul class="header-nav-item">
-            <a href="/contracts.php" class="header-nav-link">Сотрудничество</a>
+            <a href="#" class="header-nav-link">Сотрудничество</a>
           </ul>
           <ul class="header-nav-item">
-            <a href="/trademarks.php" class="header-nav-link">Заказать звонок</a>
+            <a href="#" class="header-nav-link">Заказать звонок</a>
           </ul>
           <ul class="navbar-icon">
             <svg class="header-icon" width="12" height="12">
@@ -196,7 +196,7 @@
         <picture  class="model-container-photo">
           <source type="image/webp" srcset="img/E-Scooters.webp">
           <source type="image/png" srcset="img/E-Scooters.png">
-          <img src="img/E-Scooters.png" alt="E-Scooters_Thumb">
+          <img src="img/E-Scooters.png" alt="E-Scooters_Thumb" width="100%" height="100%">
         </picture>
       <div class="container">
         <div class="container-modal">
@@ -241,7 +241,7 @@
       <picture  class="safety-container-photo">
         <source type="image/webp" srcset="img/safety.webp">
         <source type="image/png" srcset="img/safety.png">
-        <img src="img/safety.png" alt="safety">
+        <img src="img/safety.png" alt="safety" width="100%" height="100%">
       </picture>
       <div class="container">
         <div class="content-wrapper">
@@ -549,7 +549,7 @@
           <picture class="cta-image">
             <source type="image/webp" srcset="img/woman.webp">
             <source type="image/jpeg" srcset="img/woman.png">
-            <img src="img/woman.png" alt="call to action">
+            <img src="img/woman.png" alt="call to action" width="100%" height="100%">
           </picture>
           <div class="container">
             <div class="cta-form-wrapper">
@@ -806,7 +806,7 @@
           <div class="cta-form-footer-modal">
             <div class="notify-modal">
               <input type="checkbox" class="custom-checkbox" name="notify" id="notify">
-              <label for="notify" class="notify-text"><p>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <u class="text-purple">политикой конфиденциальности</u></p></label>
+              <label for="notify" class="notify-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <u class="text-purple">политикой конфиденциальности</u></label>
             </div>
           </div> 
         </div>
