@@ -10,10 +10,23 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Kugoo</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="manifest" href="img/site.webmanifest">
+  <link rel="manifest" href="img/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
   <body class="front-page">
     <div class="mobile-menu">
@@ -61,7 +74,7 @@
           <div class="mobile-menu-line-navbar"></div>
         </a>
       <ul class="header-nav">
-        <div class="header-navar-block">
+        <li class="header-navar-block">
           <li class="header-nav-item">
             <a href="/about.php" class="header-nav-link">Сервис</a>
           </li>
@@ -71,7 +84,7 @@
           <li class="header-nav-item">
             <a href="/trademarks.php" class="header-nav-link">Заказать звонок</a>
           </li>
-          <div class="navbar-icon">
+          <li class="navbar-icon">
             <svg class="header-icon" width="12" height="12">
               <use href="img/sprite.svg#viber"></use>
             </svg>
@@ -81,8 +94,8 @@
             <svg class="header-icon" width="12" height="12">
               <use href="img/sprite.svg#telegram"></use>
             </svg>
-          </div>
-        </div>
+          </li>
+        </li>
       </ul>
       <div class="header-phone">
         <a href="tel:+78005055461" class="header-phone-link">+7 (800) 505-54-61</a>
@@ -93,12 +106,12 @@
       <picture  class="navbar-header-logo">
         <source type="image/webp" srcset="img/logo.webp">
         <source type="image/png" srcset="img/logo.png">
-        <img src="img/logo.png" alt="logo" width="100%" height="100%">
+        <img src="img/logo.png" alt="logo">
       </picture>
       <div class="block-header">
         <div class="select-menu active">
           <ul class="menu-toggle select-btn">
-            <li href="" class="mobile-menu-toggle">
+            <li class="mobile-menu-toggle">
               <div class="mobile-menu-line"></div>
               <div class="mobile-menu-line"></div>
               <div class="mobile-menu-line" id="menu-line-end"></div>
@@ -183,7 +196,7 @@
         <picture  class="model-container-photo">
           <source type="image/webp" srcset="img/E-Scooters.webp">
           <source type="image/png" srcset="img/E-Scooters.png">
-          <img src="img/E-Scooters.png" alt="E-Scooters_Thumb" width="100%" height="100%">
+          <img src="img/E-Scooters.png" alt="E-Scooters_Thumb">
         </picture>
       <div class="container">
         <div class="container-modal">
@@ -220,7 +233,7 @@
               </ul>
             </div>
             <!-- /.model-content -->
-        </div>
+          </div>
         </div>
       </div>
     </section>
@@ -228,7 +241,7 @@
       <picture  class="safety-container-photo">
         <source type="image/webp" srcset="img/safety.webp">
         <source type="image/png" srcset="img/safety.png">
-        <img src="img/safety.png" alt="safety" width="100%" height="100%">
+        <img src="img/safety.png" alt="safety">
       </picture>
       <div class="container">
         <div class="content-wrapper">
@@ -274,6 +287,7 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
     <section class="section test">
       <div class="container">
@@ -535,7 +549,7 @@
           <picture class="cta-image">
             <source type="image/webp" srcset="img/woman.webp">
             <source type="image/jpeg" srcset="img/woman.png">
-            <img src="img/woman.png" alt="call to action" width="100%">
+            <img src="img/woman.png" alt="call to action">
           </picture>
           <div class="container">
             <div class="cta-form-wrapper">
@@ -552,7 +566,7 @@
                 <div class="cta-form-footer">
                   <div class="notify">
                     <input type="checkbox" class="custom-checkbox" name="notify" id="notify">
-                    <label for="notify" class="notify-text"><p>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <u>политикой конфиденциальности</u></p></label>
+                    <label for="notify" class="notify-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <u>политикой конфиденциальности</u></label>
                   </div>
                 </div>
               </form>
@@ -631,7 +645,7 @@
                 <h2 class="footer-menu-title">Контакты</h2>
                 <ul class="footer-menu-list footer-menu-column-2">
                   <li class="footer-menu-item">
-                    <p href="" class="footer-menu-text">Call-центр</p>
+                    <p class="footer-menu-text">Call-центр</p>
                   </li>
                   <li class="footer-menu-item">
                     <a href="tel:+78005055461" class="footer-phone">+7 (800) 505-54-61</a>
@@ -640,7 +654,7 @@
                     <p class="footer-copyright">Пн-Вс 10:00 - 20:00</p>
                   </li>
                   <li class="footer-menu-item">
-                    <p href="" class="footer-menu-text">Сервисный центр</p>
+                    <p class="footer-menu-text">Сервисный центр</p>
                   </li>
                   <li class="footer-menu-item">
                     <a href="tel:+74993507692" class="footer-phone">+7 (499) 350-76-92</a>
