@@ -138,8 +138,8 @@
           </ul>
         </div>
         <div class="input-navbar-header modal-input-navbar-header">
-          <input id="modal-user-name" type="text" class="modal-input" name="username" placeholder=" ">
-          <label class="input-navbar-header-label" for="modal-user-name">Искать самокат KUGO</label>
+          <input id="modal-user-name" type="text" class="modal-input modal-mask" name="username" placeholder="Искать самокат KUGO">
+          <label class="input-navbar-header-label" for="modal-user-name"></label>
           <svg class="input-icon" width="20" height="20">
             <use href="img/sprite.svg#lupa"></use>
           </svg>
