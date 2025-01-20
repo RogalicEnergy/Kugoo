@@ -75,16 +75,16 @@
         </a>
       <ul class="header-nav">
         <li class="header-navar-block">
-          <li class="header-nav-item">
+          <ul class="header-nav-item">
             <a href="/about.php" class="header-nav-link">Сервис</a>
-          </li>
-          <li class="header-nav-item">
+          </ul>
+          <ul class="header-nav-item">
             <a href="/contracts.php" class="header-nav-link">Сотрудничество</a>
-          </li>
-          <li class="header-nav-item">
+          </ul>
+          <ul class="header-nav-item">
             <a href="/trademarks.php" class="header-nav-link">Заказать звонок</a>
-          </li>
-          <li class="navbar-icon">
+          </ul>
+          <ul class="navbar-icon">
             <svg class="header-icon" width="12" height="12">
               <use href="img/sprite.svg#viber"></use>
             </svg>
@@ -94,7 +94,7 @@
             <svg class="header-icon" width="12" height="12">
               <use href="img/sprite.svg#telegram"></use>
             </svg>
-          </li>
+          </ul>
         </li>
       </ul>
       <div class="header-phone">
