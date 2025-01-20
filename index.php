@@ -787,37 +787,37 @@
       <div class="modal-dialog">
         <div class="modal-body-block">
           <h2 class="modal-title">Запишитесь на тест-драйв электросамоката</h2>
-        <p class="modal-title-text">и подберите модель для себя</p>
-        <p class="modal-text-menedjer">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
-        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
-          <svg class="close-icon" width="24" height="24">
-            <use href="img/sprite.svg#close"></use>
-          </svg>
-        </a>
-        <p class="modal-text">Как с вами удобнее связаться?</p>
-        <form action="handler.php" method="POST" class="modal-form">
-          <div class="input-group-wrapper input-group-vertical">
-            <div class="input-group modal-input-group">
-              <input id="modal-user-phone" type="tel" class="input phone-modal phone-mask" name="userphone" placeholder=" ">
-              <label class="input-group-label modal-input-label" for="modal-user-phone">+7 (___) __ - __ - __</label>
-            </div>
-            <button type="submit" class="button cta-modal-form-button">Оформить предзаказ</button>
-          </div>
-          <div class="cta-form-footer-modal">
-            <div class="notify-modal">
-              <input type="checkbox" class="custom-checkbox" name="notify" id="notify">
-              <label for="notify" class="notify-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <u class="text-purple">политикой конфиденциальности</u></label>
-            </div>
-          </div> 
+          <p class="modal-title-text">и подберите модель для себя</p>
+          <p class="modal-text-menedjer">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
+          <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
+            <svg class="close-icon" width="24" height="24">
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </a>
+          <p class="modal-text">Как с вами удобнее связаться?</p>
+            <form action="handler.php" method="POST" class="modal-form">
+              <div class="input-group-wrapper input-group-vertical">
+                <div class="input-group modal-input-group">
+                  <input id="modal-user-phone" type="tel" class="input phone-modal phone-mask" name="userphone" placeholder=" ">
+                  <label class="input-group-label modal-input-label" for="modal-user-phone">+7 (___) __ - __ - __</label>
+                </div>
+                <button type="submit" class="button cta-modal-form-button">Оформить предзаказ</button>
+              </div>
+              <div class="cta-form-footer-modal">
+                <div class="notify-modal">
+                  <input type="checkbox" class="custom-checkbox" name="notify" id="notify">
+                  <label for="notify" class="notify-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <u class="text-purple">политикой конфиденциальности</u></label>
+                </div>
+              </div> 
+              <div class="modal-block-logo">
+                <picture class="modal-logo">
+                  <source type="image/webp" srcset="img/woman2.webp">
+                  <source type="image/jpeg" srcset="img/woman2.png">
+                  <img src="img/woman2.png" alt="Запишитесь">
+                </picture>
+              </div>
+          </form>
         </div>
-          <div class="modal-block-logo">
-            <picture class="modal-logo">
-              <source type="image/webp" srcset="img/woman2.webp">
-              <source type="image/jpeg" srcset="img/woman2.png">
-              <img src="img/woman2.png" alt="Запишитесь">
-            </picture>
-          </div>
-        </form>
       </div>
     </div>
     <script src="js/swiper-bundle.min.js"></script>
