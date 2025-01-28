@@ -67,41 +67,44 @@
         </a>
       </div>
     </div>
-    <nav class="navbar">
-        <a href="" class="mobile-menu-toggle-navbar">
-          <div class="mobile-menu-line-navbar"></div>
-          <div class="mobile-menu-line-navbar"></div>
-          <div class="mobile-menu-line-navbar"></div>
-        </a>
-      <ul class="header-nav">
-        <li class="header-navar-block">
-          <ul class="header-nav-item">
-            <a href="#" class="header-nav-link">Сервис</a>
-          </ul>
-          <ul class="header-nav-item">
-            <a href="#" class="header-nav-link">Сотрудничество</a>
-          </ul>
-          <ul class="header-nav-item">
-            <a href="#" class="header-nav-link">Заказать звонок</a>
-          </ul>
-          <ul class="navbar-icon">
-            <svg class="header-icon" width="12" height="12">
-              <use href="img/sprite.svg#viber"></use>
-            </svg>
-            <svg class="header-icon" width="12" height="12">
-              <use href="img/sprite.svg#whatsapp"></use>
-            </svg>
-            <svg class="header-icon" width="12" height="12">
-              <use href="img/sprite.svg#telegram"></use>
-            </svg>
-          </ul>
-        </li>
-      </ul>
-      <div class="header-phone">
-        <a href="tel:+78005055461" class="header-phone-link">+7 (800) 505-54-61</a>
-      </div>
-    </nav>
-    <hr class="header-seporator">
+    <div class="container container-navbar">
+      <nav class="navbar">
+          <a href="" class="mobile-menu-toggle-navbar">
+            <div class="mobile-menu-line-navbar"></div>
+            <div class="mobile-menu-line-navbar"></div>
+            <div class="mobile-menu-line-navbar"></div>
+          </a>
+        <ul class="header-nav">
+          <li class="header-navar-block">
+            <ul class="header-nav-item">
+              <a href="#" class="header-nav-link">Сервис</a>
+            </ul>
+            <ul class="header-nav-item">
+              <a href="#" class="header-nav-link">Сотрудничество</a>
+            </ul>
+            <ul class="header-nav-item">
+              <a href="#" class="header-nav-link">Заказать звонок</a>
+            </ul>
+            <ul class="navbar-icon">
+              <svg class="header-icon" width="12" height="12">
+                <use href="img/sprite.svg#viber"></use>
+              </svg>
+              <svg class="header-icon" width="12" height="12">
+                <use href="img/sprite.svg#whatsapp"></use>
+              </svg>
+              <svg class="header-icon" width="12" height="12">
+                <use href="img/sprite.svg#telegram"></use>
+              </svg>
+            </ul>
+          </li>
+        </ul>
+        <div class="header-phone">
+          <a href="tel:+78005055461" class="header-phone-link">+7 (800) 505-54-61</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- <hr class="header-seporator"> -->
     <div class="navbar-header">
       <picture  class="navbar-header-logo">
         <source type="image/webp" srcset="img/logo.webp">
@@ -669,7 +672,6 @@
               </div>
               <!-- /.footer-menu-wrapper -->
             </div>
-            <hr class="footer-seporator">
             <div class="social">
               <picture  class="navbar-header-logo">
                 <source type="image/webp" srcset="img/logo.webp">
@@ -723,7 +725,7 @@
               </div>
             </div>
             <!-- /.social -->
-            <hr class="footer-seporator">
+            <!-- <hr class="footer-seporator"> -->
             <div class="footer-political">
               <ul class="footer-text-list">
                 <li class="footer-text-item">Реквизиты</li>

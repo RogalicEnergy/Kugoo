@@ -9,12 +9,18 @@ body {
   margin: auto;
 }
 
+.container-navbar {
+  border-bottom: 1px solid rgba(93, 108, 123, 0.2);
+  max-width: 100%;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   width: 69.375rem;
   margin: auto;
   height: 2.4375rem;
+
 }
 
 .header-navar-block {
@@ -864,6 +870,7 @@ body {
   padding-top: 2.125rem;
   padding-bottom: 4.6875rem;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(93, 108, 123, 0.2);
 }
 
 .footer-menu-list {
@@ -949,6 +956,7 @@ body {
   justify-content: space-between;
   padding-top: 2.25rem;
   padding-bottom: 2.0625rem;
+  border-bottom: 1px solid rgba(93, 108, 123, 0.2);
 }
 .social-block {
   display: flex;
@@ -1359,6 +1367,10 @@ body {
   .container {
     max-width: 60rem;
   }
+  .container-navbar {
+    max-width: 100%;
+  }
+  
   .scooters {
     width: 90%;
     height: 100%;
@@ -1447,6 +1459,10 @@ body {
   .container {
     max-width: 50rem;
   }
+  .container-navbar {
+    max-width: 100%;
+  }
+  
   .section-title {
     font-size: 16px;
   }
@@ -1718,6 +1734,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid rgba(93, 108, 123, 0.2);
   }
   .input-group-wrapper {
     display: flex;
