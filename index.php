@@ -196,55 +196,57 @@
       </div>
     </section>
     <section class="section model">
-        <picture  class="model-container-photo">
-          <source type="image/webp" srcset="img/E-Scooters.webp">
-          <source type="image/png" srcset="img/E-Scooters.png">
-          <img src="img/E-Scooters.png" alt="E-Scooters_Thumb" width="100%" height="100%">
-        </picture>
       <div class="container">
-        <div class="container-modal">
-          <h2 class="section-title">Определите максимально подходящую вам модель
-            не теоретически, а на практике</h2>
-          <div class="model-container-wrapper">
-            <div class="model-container-content">
-              <p class="model-container-text">Тест-драйв поможет:</p>
-              <ul class="model-container-list">
-                <li class="model-container-list-item">
-                  <svg width="30" height="30" class="model-container-list-icon">
-                    <use href="/img/sprite.svg#outlined"></use>
-                  </svg>
-                  Понять подходит ли вам конкретная модель;
-                </li>
-                <li class="model-container-list-item">
-                  <svg width="30" height="30" class="model-container-list-icon">
-                    <use href="img/sprite.svg#outlined"></use>
-                  </svg>
-                  Испытать самокат в «реальной жизни»;
-                </li>
-                <li class="model-container-list-item">
-                  <svg width="30" height="30" class="model-container-list-icon">
-                    <use href="img/sprite.svg#outlined"></use>
-                  </svg>
-                  Оценить удобство хранения и эксплуатации;
-                </li>
-                <li class="model-container-list-item">
-                  <svg width="30" height="30" class="model-container-list-icon">
-                    <use href="img/sprite.svg#outlined"></use>
-                  </svg>
-                  Узнать реальные характеристики и возможности модели.
-                </li>
-              </ul>
+        <div class="modal-block">
+          <div class="container-modal">
+            <h2 class="section-title">Определите максимально подходящую вам модель
+              не теоретически, а на практике</h2>
+            <div class="model-container-wrapper">
+              <div class="model-container-content">
+                <p class="model-container-text">Тест-драйв поможет:</p>
+                <ul class="model-container-list">
+                  <li class="model-container-list-item">
+                    <svg width="30" height="30" class="model-container-list-icon">
+                      <use href="/img/sprite.svg#outlined"></use>
+                    </svg>
+                    <span class="bold">Понять</span>  подходит ли вам конкретная модель;
+                  </li>
+                  <li class="model-container-list-item">
+                    <svg width="30" height="30" class="model-container-list-icon">
+                      <use href="img/sprite.svg#outlined"></use>
+                    </svg>
+                    <span class="bold">Испытать</span> самокат в «реальной жизни»;
+                  </li>
+                  <li class="model-container-list-item">
+                    <svg width="30" height="30" class="model-container-list-icon">
+                      <use href="img/sprite.svg#outlined"></use>
+                    </svg>
+                    <span class="bold">Оценить</span> удобство хранения и эксплуатации;
+                  </li>
+                  <li class="model-container-list-item">
+                    <svg width="30" height="30" class="model-container-list-icon">
+                      <use href="img/sprite.svg#outlined"></use>
+                    </svg>
+                    <span class="bold">Узнать</span> реальные характеристики и возможности модели.
+                  </li>
+                </ul>
+              </div>
+              <!-- /.model-content -->
             </div>
-            <!-- /.model-content -->
           </div>
         </div>
       </div>
+      <picture  class="model-container-photo">
+        <source type="image/webp" srcset="img/E-Scooters.webp">
+        <source type="image/jpg" srcset="img/E-Scooters.jpg">
+        <img src="img/E-Scooters.jpg" alt="E-Scooters_Thumb">
+      </picture>
     </section>
     <section class="section safety">
       <picture  class="safety-container-photo">
-        <source type="image/webp" srcset="img/safety.webp">
-        <source type="image/png" srcset="img/safety.png">
-        <img src="img/safety.png" alt="safety" width="100%" height="100%">
+        <source type="image/webp" srcset="img/safety2.webp">
+        <source type="image/png" srcset="img/safety2.png">
+        <img src="img/safety2.png" alt="safety">
       </picture>
       <div class="container">
         <div class="content-wrapper">
